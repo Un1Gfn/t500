@@ -32,6 +32,12 @@ http://www.thinkwiki.org/wiki/BIOS_Upgrade#Manual_method
 https://www.donarmstrong.com/posts/x200_bios_update/
 
 
+http://www.thinkwiki.org/wiki/BIOS_Upgrade_success_failure#GRUB2:_Booting_floppy_Image
+Use memdisk from syslinux 4.x instead of 6.x
+https://mirrors.edge.kernel.org/pub/linux/utils/boot/syslinux/syslinux-4.07.zip
+unzip -j syslinux-4.07.zip memdisk/memdisk
+
+
 Package  (ID)       BIOS  (BIOS ID)   ECP   (ECP ID)      Rev.  Issue Date
 ------------------- ----------------  ----------------    ----  ---------------
 3.22-1.07(6DUJ48UC) 3.22  (7XET72WW)  1.07  (7XHT25WW)    01    2013/07/03
