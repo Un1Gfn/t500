@@ -13,6 +13,34 @@ https://download.lenovo.com/eol/index.html
 
 
 
+https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles/6duj48uc.txt
+----------------------------------------------------------------------------
+While the "To interrupt normal startup, press the blue ThinkVantage button"
+message is displayed at the lower-left area of the screen, press the F1 key.
+The BIOS Setup Utility menu will be displayed.
+----------------------------------------------------------------------------
+While the "To interrupt normal startup, press the blue ThinkVantage button"
+message is displayed at the lower-left area of the screen, press the F12
+key. Boot Menu will be displayed.
+
+
+Restore BIOS settings to default before upgrade
+
+No operating system
+
+http://www.thinkwiki.org/wiki/BIOS_Upgrade#Manual_method
+https://www.donarmstrong.com/posts/x200_bios_update/
+
+
+Package  (ID)       BIOS  (BIOS ID)   ECP   (ECP ID)      Rev.  Issue Date
+------------------- ----------------  ----------------    ----  ---------------
+3.22-1.07(6DUJ48UC) 3.22  (7XET72WW)  1.07  (7XHT25WW)    01    2013/07/03
+3.22     (6DUJ47UC) 3.22  (7XET72WW)  1.06  (7XHT24WW)    01    2012/12/13
+3.21                3.21  (7XET71WW)  1.06  (7XHT24WW)    01    2011/12/26
+3.20                3.20  (7XET70WW)  1.06  (7XHT24WW)    01    2011/07/14 
+
+
+
 # biosdecode 3.2
 VPD present.
         BIOS Build ID: 7XET70WW 
