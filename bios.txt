@@ -37,6 +37,9 @@ Use memdisk from syslinux 4.x instead of 6.x
 https://mirrors.edge.kernel.org/pub/linux/utils/boot/syslinux/syslinux-4.07.zip
 unzip -j syslinux-4.07.zip memdisk/memdisk
 
+Downgrade ECP to 1.06 ?
+https://support.lenovo.com/us/en/downloads/migr-70348
+
 
 Package  (ID)       BIOS  (BIOS ID)   ECP   (ECP ID)      Rev.  Issue Date
 ------------------- ----------------  ----------------    ----  ---------------
