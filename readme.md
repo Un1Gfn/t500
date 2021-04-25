@@ -1,18 +1,76 @@
-BIOS
+<!--
+&bullet;
+-->
 
-    winbond
-    25Q32BVSIG
-    1222
+## BIOS.GENERAL
 
-https://flashrom.org/Supported_hardware#USB_Devices
+[Serial Peripheral Interface (SPI)](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)
+
+[25Q32BVSIG](http://www.datasheetcafe.com/25q32bvsig-datasheet-w25q32bvssig-winbond/)
+
+    +----------+
+    | winbond  |
+    |25Q32BVSIG| (drawn by ./box.c)
+    |  1222    |
+    +----------+
+
+[Latest BIOS Update](https://download.lenovo.com/eol/index.html)\
+&bullet; 6duj48us.iso - sha1sum 461fe63039eb3849ff025d4bcb89b86a3607bf95 \
+&bullet; [6duj48uc.txt](https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles/6duj48uc.txt) - Read me
+
+[r/coreboot](https://www.reddit.com/r/coreboot)\
+[r/libreboot](https://www.reddit.com/r/libreboot)\
+[r/thinkpad](https://www.reddit.com/r/thinkpad)\
+[thinkpads.com forum](https://forum.thinkpads.com/)\
+[bios-mods forum](https://www.bios-mods.com/)
+
+[Retrieve video BIOS via Linux kernel](https://www.coreboot.org/VGA_support#Retrieval_via_Linux_kernel) - [01.org](https://01.org/linuxgraphics/documentation/development/how-dump-video-bios)
+
+## BIOS.FLASHING.BBGW
+
+[Allwinner V5 eMMC Support List](http://files.lindeni.org/lindenis-v5/documents/support_list/Allwinner%C2%A0V5%20eMMC%C2%A0Support%C2%A0List.pdf)\
+&bullet; [MTFC8GAKAJCN-1M WT / **Micron MTFC4GACAJCN-1M WT (possibly 6FA27-JY976)**](https://www.micron.com/products/managed-nand/emmc/part-catalog/mtfc8gakajcn-1m-wt)
+
+[Libreboot Documentation](https://libreboot.org/docs/)\
+&bullet; [ThinkPad X200](https://libreboot.org/docs/hardware/x200.html)\
+&bullet; [Hardware Compatibility List](https://libreboot.org/docs/hardware/)\
+&bullet; [Installation Instructions](https://libreboot.org/docs/install/)\
+&nbsp;   &bullet; [BBB](https://libreboot.org/docs/install/bbb_setup.html) - [BBB X200](https://libreboot.org/docs/install/x200_external.html)\
+&nbsp;   &bullet; [RPI X200](https://libreboot.org/docs/install/rpi_setup.html#raspberry-pi-thinkpad-x200)\
+&nbsp;   &bullet; [MAC address](https://libreboot.org/docs/hardware/mac_address.html)
+
+[Coreboot](https://coreboot.org/) - [GitHub](https://github.com/coreboot/coreboot) - [Documentation](https://doc.coreboot.org/index.html)\
+&bullet; [Lenovo X200 / T400 / T500 / X301 common](https://doc.coreboot.org/mainboard/lenovo/montevina_series.html)
+
+## BIOS.FLASHING.CH341
+
+[CH341A schematics](https://www.onetransistor.eu/2017/08/ch341a-mini-programmer-schematic.html) -
+[XTW100 schematics](https://www.onetransistor.eu/2020/08/xtw100-minprogrammer-schematic-driver.html)
+
+**[Do not use CH341A!](https://libreboot.org/faq.html#do-not-use-ch341a)**\
+&bullet; [3V 32M-BIT](https://www.winbond.com/resource-files/w25q32bv_revi_100413_wo_automotive.pdf#page=1)\
+&bullet; [Supply Voltage VCC MAX 3.6](https://www.winbond.com/resource-files/w25q32bv_revi_100413_wo_automotive.pdf#page=61)\
+&bullet; [V = 2.7V to 3.6V](https://www.winbond.com/resource-files/w25q32bv_revi_100413_wo_automotive.pdf#page=76)
+
+Fix\
+&bullet; [YouTube](https://www.youtube.com/watch?v=-ln3VIZKKaE)\
+&bullet; [EEVblog](https://www.eevblog.com/forum/repair/ch341a-serial-memory-programmer-power-supply-fix/)
 
 [1a86:5512](https://linux-hardware.org/?id=usb:1a86-5512)\
-&bullet; lsusb - QinHeng Electronics CH341 in EPP/MEM/I2C mode, EPP/I2C adapter\
-&bullet; [flashrom](https://flashrom.org/Supported_hardware#USB_Devices) - ch341a_spi Winchiphead (WCH) CH341A
 &bullet; lsmod - ch341\
+&bullet; ["ch341" on lcsc](https://lcsc.com/search?q=ch341)\
+&bullet; ["ch341" on szlcsc](https://so.szlcsc.com/global.html?k=ch341)\
+&bullet; [flashrom](https://flashrom.org/Supported_hardware#USB_Devices) - ch341a_spi Winchiphead (WCH) CH341A\
+&bullet; lsusb - QinHeng Electronics CH341 in EPP/MEM/I2C mode, EPP/I2C adapter\
 &bullet; modinfo - /lib/modules/"$(uname -r)"/kernel/drivers/usb/serial/ch341.ko.xz
 
+
 ---
+
+X200 specs\
+&bullet; [Lenovo](https://support.lenovo.com/jp/en/solutions/migr-73156)\
+&bullet; [NotebookReview](http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x200-review/)\
+&bullet; [ThinkWiki](https://www.thinkwiki.org/wiki/Category:X200)
 
 [Hardware Devices that Support GNU/Linux](https://www.fsf.org/resources/hw)\
 &bullet; [Recommended Complete Systems](https://www.fsf.org/resources/hw/systems)
@@ -24,11 +82,6 @@ hardware databases\
 [Respects Your Freedom (RYF) Certification](https://ryf.fsf.org/)\
 &bullet; [criteria](https://ryf.fsf.org/about/criteria/)\
 &bullet; [Technoethical TET-X200](https://ryf.fsf.org/products/TET-X200)
-
-X200 specs\
-&bullet; [Lenovo](https://support.lenovo.com/jp/en/solutions/migr-73156)\
-&bullet; [NotebookReview](http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x200-review/)\
-&bullet; [ThinkWiki](https://www.thinkwiki.org/wiki/Category:X200)
 
 [Battery](https://www.lenovo.com/support/batteries)\
 &bullet; [ThinkPad Battery 47/47+/47++](https://support.lenovo.com/jp/en/solutions/migr-70297)\
