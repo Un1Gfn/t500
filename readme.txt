@@ -44,11 +44,8 @@ https://www.thinkwiki.org/wiki/Extending_battery_life_on_X200
 https://www.thinkwiki.org/wiki/Installation_instructions_for_the_ThinkPad_X200
 https://www.thinkwiki.org/wiki/Problem_with_unauthorized_MiniPCI_network_card
 
-
 CCFL LCD
 LTN121W1-L03 Glossy display vs Matte Display
-
-
 
 https://unix.stackexchange.com/a/178657/246562
 sed -n 'line_num p' | bash
@@ -90,7 +87,6 @@ cat .bash_history | wc -l
 sed -E -i '/'"$A"'/d' .bash_history
 cat .bash_history | wc -l
 
-
 Power
 power off bluetooth/USB/IntegratedSoundJHardware
 https://askubuntu.com/questions/218567/any-way-to-check-the-clock-speed-of-my-processor/218570
@@ -112,16 +108,19 @@ https://youtu.be/pUUEhK8jpZQ
 https://youtu.be/Ku0491LfhR4
 https://youtu.be/RWyOn1ThEnc
 
-
 # Trackpoint
 # bindsym $mod+Insert exec echo $(($(< /sys/devices/platform/i8042/serio1/sensitivity)+1)) >/sys/devices/platform/i8042/serio1/sensitivity
 # bindsym $mod+Delete exec echo $(($(< /sys/devices/platform/i8042/serio1/sensitivity)-1)) >/sys/devices/platform/i8042/serio1/sensitivity
 # bindsym $mod+Prior exec echo $(($(< /sys/devices/platform/i8042/serio1/speed)+1)) >/sys/devices/platform/i8042/serio1/speed
 # bindsym $mod+Next exec echo $(($(< /sys/devices/platform/i8042/serio1/speed)-1)) >/sys/devices/platform/i8042/serio1/speed
 
+BIOS晶片
+winbond
+25Q32BVSIG
+1222
 
-
-
+ch341a_spi Winchiphead (WCH) CH341A 1a86:5512
+https://flashrom.org/Supported_hardware#USB_Devices
 
 
 
