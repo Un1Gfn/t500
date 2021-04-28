@@ -1,5 +1,0 @@
-LEN4010
-
-$ grep -i "manufacturer" .local/share/xorg/Xorg.0.log
-[   238.099] (II) intel(0): Manufacturer: LEN  Model: 4010  Serial#: 0
-[   238.099] (II) intel(0): Manufacturer's mask: 0
