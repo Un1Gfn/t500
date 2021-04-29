@@ -1,12 +1,16 @@
 
 ---
 
-&bullet; [readme.md](https://github.com/Un1Gfn/x200)\
+&bullet; [readme.md](https://github.com/Un1Gfn/t500)\
 **&#9656; bios.md**
 
 ---
 
 ## Upgrade
+
+[Windows XP SP3](https://archive.org/details/WinXPProSP3x86)\
+&bullet; en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso\
+&bullet; sha256sum fd8c8d42c1581e8767217fe800bfc0d5649c0ad20d754c927d6c763e446d1927
 
 **Restore BIOS settings to default before upgrade!**
 
@@ -17,23 +21,15 @@
 ?
 ```
 
+[Hiren's BootCD PE - GRUB - Mini Windows XP](https://www.dell.com/community/Linux-General/HOW-TO-Update-BIOS-on-DELL-Laptops-Desktops-Servers-running/td-p/4166910) `C:\DRIVERS\FLASH\6duj48u6\`
+
+[VC++ all-in-one](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/) - md5sum DA4846C8825F4005B1A854AE3F14946C
+
+[Support > Driver Detail](https://support.lenovo.com/us/en/downloads/migr-70348)
+
 [BIOS Upgrade Downloads](https://www.thinkwiki.org/wiki/BIOS_Upgrade_Downloads)\
 &bullet; [Lenovo EOL Portal](https://download.lenovo.com/eol/index.html)\
-&bullet; [Support > Driver Detail](https://support.lenovo.com/us/en/downloads/migr-70348)\
-&bullet; 6duj48u6.exe - sha1sum 4d65b53a566ca94dde09f0e5d0fed0fe940215d9 -\
-&nbsp;   &bullet; [Hiren's BootCD PE - GRUB - Mini Windows XP](https://www.dell.com/community/Linux-General/HOW-TO-Update-BIOS-on-DELL-Laptops-Desktops-Servers-running/td-p/4166910) `C:\DRIVERS\FLASH\6duj48u6\`\
-&nbsp;   &bullet; [VC++ all-in-one](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/) - md5sum DA4846C8825F4005B1A854AE3F14946C\
-
-BIOS Update Utility\
-&bullet; 6duj48u6.exe\
-&bullet; 6duj48us.exe\
-&bullet; [6duj48us.txt](https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles/6duj48us.txt) - Read me -
-
->The file name ends with "US.EXE" for 32-bit, "U6.EXE" for 64-bit Windows.
-
-BIOS Update CD\
-&bullet; 6duj48us.iso - sha1sum 461fe63039eb3849ff025d4bcb89b86a3607bf95\
-&bullet; [6duj48uc.txt](https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles/6duj48uc.txt) - Read me -
+&bullet; [6duj48us.txt](https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles/6duj48us.txt)
 
 >While the "To interrupt normal startup, press the blue ThinkVantage button"\
 >message is displayed at the lower-left area of the screen, press the F1 key.\
@@ -43,21 +39,15 @@ BIOS Update CD\
 >message is displayed at the lower-left area of the screen, press the F12\
 >key. Boot Menu will be displayed.
 
-    (Upper two alphanumeric characters of BIOS ID are 6D)
+    [For BIOS ID 7Vxxxxxx-based computer]
+    (Upper two alphanumeric characters of BIOS ID are 7V)
+    -----------------------------------------------------
      
-    Package  (ID)       BIOS  (BIOS ID)   ECP   (ECP ID)      Rev.  Issue Date
-    ------------------- ----------------  ----------------    ----  ---------------
-    3.22-1.07(6DUJ48UC) 3.22  (6DET72WW)  1.07  (7XHT25WW)    01    2013/07/03
-    3.22     (6DUJ47UC) 3.22  (6DET72WW)  1.06  (7XHT24WW)    01    2012/12/13
-
-<div></div>
-
-    (Upper two alphanumeric characters of BIOS ID are 7X)
-     
-    Package  (ID)       BIOS  (BIOS ID)   ECP   (ECP ID)      Rev.  Issue Date
-    ------------------- ----------------  ----------------    ----  ---------------
-    3.22-1.07(6DUJ48UC) 3.22  (7XET72WW)  1.07  (7XHT25WW)    01    2013/07/03
-    3.22     (6DUJ47UC) 3.22  (7XET72WW)  1.06  (7XHT24WW)    01    2012/12/13
+      Package  (ID)     BIOS  (BIOS ID)   ECP   (ECP ID)      Rev.  Issue Date
+      ----------------  ----------------  ----------------    ----  ---------------
+      3.25  (6FUJ46UC)  3.25  (7VET95WW)  1.06  (7VHT16WW)    01    2012/12/07
+      ...
+      3.13-1.06         3.13  (7VET83WW)  1.06  (7VHT16WW)    01    2010/03/31
 
 Upgrade w/ [SYSLINUX](https://en.wikipedia.org/wiki/SYSLINUX) memdisk\
 &bullet; [ThinkWiki](http://www.thinkwiki.org/wiki/BIOS_Upgrade#Manual_method)\
@@ -67,11 +57,11 @@ Upgrade w/ [SYSLINUX](https://en.wikipedia.org/wiki/SYSLINUX) memdisk\
 
 Trial & error\
 &bullet; grub4dos - ?\
-&bullet; <del>geteltorito.pl img dd usb</del> Missing operating system\
+&bullet; geteltorito.pl img dd usb - ?\
 &bullet; geteltorito.pl img syslinux 4.07 memdisk grub2 usb -
 
     unzip -j syslinux-4.07.zip memdisk/memdisk
-    geteltorito.pl -o 6DUJ48US.IMG 6duj48us.iso
+    geteltorito.pl -o 6FUJ46UC.IMG 6fuj46uc.iso
 
 <div></div>
 
@@ -90,7 +80,7 @@ Trial & error\
 <div></div>
 
     mount -v /dev/sdX2 /mnt
-    cp -iv memdisk 6DUJ48US.IMG /mnt/
+    cp -iv memdisk 6FUJ46UC.IMG /mnt/
     grub-install -v --boot-directory=/mnt --target=i386-pc /dev/sdX
     grub-mkconfig -o /mnt/grub/grub.cfg
     tree -aCL 2 /mnt
@@ -98,6 +88,8 @@ Trial & error\
     udisksctl power-off -b /dev/sdX
 
 ## Misc1
+
+[SMBIOS](https://en.wikipedia.org/wiki/System_Management_BIOS)
 
 [Serial Peripheral Interface (SPI)](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)
 

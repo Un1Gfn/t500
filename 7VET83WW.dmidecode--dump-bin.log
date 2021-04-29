@@ -1,0 +1,8 @@
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 2.4 present.
+80 structures occupying 2858 bytes.
+Table at 0x000E0010.
+
+# Writing 2858 bytes to 7VET83WW.dmidecode--dump-bin.
+# Writing 31 bytes to 7VET83WW.dmidecode--dump-bin.

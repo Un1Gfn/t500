@@ -1,0 +1,101 @@
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 2.4 present.
+80 structures occupying 2858 bytes.
+Table at 0x000E0010.
+
+Handle 0x0000, DMI type 0, 24 bytes
+	Header and Data:
+		00 18 00 00 01 02 00 E0 03 3F 80 DB 0B 00 00 00
+		12 00 03 05 03 13 01 06
+	Strings:
+		4C 45 4E 4F 56 4F 00
+		LENOVO
+		37 56 45 54 38 33 57 57 20 28 33 2E 31 33 20 29
+		37 56 45 54 38 33 57 57 20 28 33 2E 31 33 20 2900
+		7VET83WW (3.13 )
+		30 33 2F 31 32 2F 32 30 31 30 00
+		03/12/2010
+
+Handle 0x0001, DMI type 1, 27 bytes
+	Header and Data:
+		01 1B 01 00 01 02 03 04 95 E1 96 A0 8B 28 11 DD
+		80 6E C9 3A 11 FB 16 FB 06 00 03
+	Strings:
+		4C 45 4E 4F 56 4F 00
+		LENOVO
+		37 34 35 35 33 33 41 00
+		745533A
+		54 68 69 6E 6B 50 61 64 20 58 32 30 30 00
+		ThinkPad X200
+		4C 56 30 30 33 39 52 00
+		LV0039R
+
+Handle 0x0002, DMI type 2, 8 bytes
+	Header and Data:
+		02 08 02 00 01 02 03 04
+	Strings:
+		4C 45 4E 4F 56 4F 00
+		LENOVO
+		37 34 35 35 33 33 41 00
+		745533A
+		4E 6F 74 20 41 76 61 69 6C 61 62 6C 65 00
+		Not Available
+		31 5A 47 4D 44 32 38 44 46 42 36 00
+		1ZGMD28DFB6
+
+Handle 0x0003, DMI type 3, 13 bytes
+	Header and Data:
+		03 0D 03 00 01 0A 02 03 04 02 02 02 02
+	Strings:
+		4C 45 4E 4F 56 4F 00
+		LENOVO
+		4E 6F 74 20 41 76 61 69 6C 61 62 6C 65 00
+		Not Available
+		4E 6F 74 20 41 76 61 69 6C 61 62 6C 65 00
+		Not Available
+		4E 6F 20 41 73 73 65 74 20 49 6E 66 6F 72 6D 61
+		4E 6F 20 41 73 73 65 74 20 49 6E 66 6F 72 6D 6174 69 6F 6E 00
+		No Asset Information
+
+Handle 0x0004, DMI type 126, 13 bytes
+	Header and Data:
+		7E 0D 04 00 01 0C 02 03 04 02 02 02 02
+	Strings:
+		4C 45 4E 4F 56 4F 00
+		LENOVO
+		4E 6F 74 20 41 76 61 69 6C 61 62 6C 65 00
+		Not Available
+		4E 6F 74 20 41 76 61 69 6C 61 62 6C 65 00
+		Not Available
+		4E 6F 74 20 41 76 61 69 6C 61 62 6C 65 00
+		Not Available
+
+Handle 0x0005, DMI type 126, 13 bytes
+	Header and Data:
+		7E 0D 05 00 01 15 02 03 04 02 02 02 02
+	Strings:
+		4C 45 4E 4F 56 4F 00
+		LENOVO
+		4E 6F 74 20 41 76 61 69 6C 61 62 6C 65 00
+		Not Available
+		4E 6F 74 20 41 76 61 69 6C 61 62 6C 65 00
+		Not Available
+		4E 6F 74 20 41 76 61 69 6C 61 62 6C 65 00
+		Not Available
+
+Handle 0x0006, DMI type 4, 35 bytes
+	Header and Data:
+		04 23 06 00 01 03 01 02 76 06 01 00 FF FB EB BF
+		03 8C 0A 01 60 09 60 09 41 06 0A 00 0C 00 FF FF
+		00 00 00
+	Strings:
+		4E 6F 6E 65 00
+		None
+		47 65 6E 75 69 6E 65 49 6E 74 65 6C 00
+		GenuineIntel
+		49 6E 74 65 6C 28 52 29 20 43 6F 72 65 28 54 4D
+		49 6E 74 65 6C 28 52 29 20 43 6F 72 65 28 54 4D29 32 20 44 75 6F 20 43 50 55 20 20 20 20 20 50
+		49 6E 74 65 6C 28 52 29 20 43 6F 72 65 28 54 4D29 32 20 44 75 6F 20 43 50 55 20 20 20 20 20 5038 36 30 30 20 20 40 20 32 2E 34 30 47 48 7A 00
+		Intel(R) Core(TM)2 Duo CPU     P8600  @ 2.40GHz
+

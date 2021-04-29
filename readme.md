@@ -5,7 +5,20 @@
 ---
 
 **&#9656; readme.md**\
-&bullet; [bios.md](https://github.com/Un1Gfn/x200/blob/master/bios.md)
+&bullet; [bios.md](https://github.com/Un1Gfn/t500/blob/master/bios.md)
+
+---
+
+    PACMAN='pacman --sysroot /mnt'
+    $PACMAN -Qq   | $PACMAN -D --asdeps -
+    # $PACMAN -Qtdq | $PACMAN -Rsc - # error: failed to reopen stdin for reading: (No such file or directory)
+    $PACMAN -Rsc $($PACMAN -Qdtq)
+    $PACMAN -Q
+
+<div></div>
+
+    # for i in *; do rmdir -v "$i"; done
+    find . -type d -empty -delete
 
 ---
 
