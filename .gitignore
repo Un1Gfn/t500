@@ -4,7 +4,7 @@
 /garbage/*
 !/garbage/.gitkeep
 
-/bmp_r.out
-/bmp_w.out
+/bmp_*.out
+/bmp_*.out
 
 /garbage.bmp

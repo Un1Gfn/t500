@@ -10,4 +10,8 @@
 // Compression method
 #define BI_RGB 0
 
+// Color Table (palette)
+#define COLORS 256
+#define CTSZ (COLORS*4)
+
 #endif // BMP_H
