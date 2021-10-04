@@ -1,4 +1,4 @@
-// Refer to corebootlibreboot.rst for build cmdline
+// cd ~/x200 && { gcc -std=gnu11 -g -O0 -Wextra -Wall -Winline -Werror=shadow -fanalyzer -o bmp_r.out bmp_r.c && { echo; ./bmp_r.out </home/darren/x200/1x1.bmp; echo; }; }
 
 #include <assert.h>
 #include <stdio.h>

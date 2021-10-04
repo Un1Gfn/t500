@@ -12,6 +12,7 @@
 
 // Color Table (palette)
 #define COLORS 256
+static_assert( COLORS==0x100 && COLORS==2*2*2*2*2*2*2*2 );
 #define CTSZ (COLORS*4)
 
 #endif // BMP_H
