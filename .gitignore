@@ -4,7 +4,7 @@
 /garbage/*
 !/garbage/.gitkeep
 
-/20210930-01:49:29.rom
-/20210930-01:51:02.rom
-/20210930-01:52:14.rom
-/20210930-01:54:13.rom
+/bmp_r.out
+/bmp_w.out
+
+/garbage.bmp
