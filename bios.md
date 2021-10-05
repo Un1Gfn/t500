@@ -122,9 +122,6 @@ YouTube video RPI X200\
 &bullet; [tripcode!Q/7](https://youtu.be/F5mKul8WUn0)\
 &bullet; [Bisqwit](https://youtu.be/PUaDkQFD7FE)
 
-[Allwinner V5 eMMC Support List](http://files.lindeni.org/lindenis-v5/documents/support_list/Allwinner%C2%A0V5%20eMMC%C2%A0Support%C2%A0List.pdf)\
-&bullet; [MTFC8GAKAJCN-1M WT / **Micron MTFC4GACAJCN-1M WT (possibly 6FA27-JY976)**](https://www.micron.com/products/managed-nand/emmc/part-catalog/mtfc8gakajcn-1m-wt)
-
 [Libreboot Documentation](https://libreboot.org/docs/)\
 &bullet; [ThinkPad X200](https://libreboot.org/docs/hardware/x200.html)\
 &bullet; [Hardware Compatibility List](https://libreboot.org/docs/hardware/)\

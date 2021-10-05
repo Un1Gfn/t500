@@ -1,13 +1,32 @@
-<!--
-&bullet;
--->
+<!-- readme.md -->
 
 ---
 
-**&#9656; readme.md**\
-&bullet; [bios.md](https://github.com/Un1Gfn/t500/blob/master/bios.md)
+&bullet; [u-boot.md](https://github.com/Un1Gfn/beaglebone/blob/master/u-boot.md)\
+&bullet; [alarm.md](https://github.com/Un1Gfn/beaglebone/blob/master/alarm.md)\
+**&#9656; readme.md**
 
 ---
+
+```
+https://flashrom.org/Supported_hardware#USB_Devices
+https://flashrom.org/FAQ
+https://www.libhunt.com/r/thinkpad-ec
+https://www.thinkwiki.org/wiki/Embedded_Controller_Firmware
+https://www.coreboot.org/Board:lenovo/x200
+https://doc.coreboot.org/payloads.html
+https://www.fsf.org/news/libreboot-x200-laptop-now-fsf-certified-to-respect-your-freedom
+https://coreboot.org/status/board-status.html
+https://zmatt.net/unlocking-my-lenovo-laptop-part-3/
+https://thinkwiki.org/wiki/BIOS_Upgrade_Downloads
+https://thinkwiki.org/wiki/BIOS_update_without_optical_disk
+https://thinkwiki.org/wiki/ThinkWiki:Support
+https://thinkwiki.org/wiki/ThinkWiki
+https://thinkwiki.org/wiki/Custom_BIOS
+https://thinkwiki.org/wiki/BIOS_Upgrade
+https://en.wikipedia.org/wiki/Libreboot
+https://en.wikipedia.org/wiki/Coreboot
+```
 
     PACMAN='pacman --sysroot /mnt'
     $PACMAN -Qq   | $PACMAN -D --asdeps -
