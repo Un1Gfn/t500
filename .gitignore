@@ -13,3 +13,8 @@
 
 /libreboot-2021????_x200_4mb.tar.xz
 /x200_4mb
+
+/crossgcc_tarballs
+!/crossgcc_tarballs/.gitkeep
+
+/ich9utils
